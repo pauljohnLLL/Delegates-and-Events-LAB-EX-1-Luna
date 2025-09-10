@@ -52,6 +52,13 @@ namespace WindowsFormsApp1
             this.DialogResult = DialogResult.OK;
         }
 
+       
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private string GetMiddleName(string middleName) { return StudentInfoClass.MiddleName; }
         private string GetAddress(string address) { return StudentInfoClass.Address; }
         private string GetProgram(string program) { return StudentInfoClass.Program; }

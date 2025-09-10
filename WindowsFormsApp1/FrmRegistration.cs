@@ -38,7 +38,7 @@ namespace WindowsFormsApp1
             StudentInfoClass.FirstName = textBox3.Text;
             StudentInfoClass.LastName = textBox2.Text;
             StudentInfoClass.MiddleName = textBox7.Text;
-            StudentInfoClass.Address = textBox6.Text;
+            StudentInfoClass.Address = dateTimePicker1.Text;
 
             if (long.TryParse(textBox4.Text, out long age))
             {
@@ -56,7 +56,7 @@ namespace WindowsFormsApp1
             FrmConfirm frmConfirm = new FrmConfirm(); 
             if (frmConfirm.ShowDialog() == DialogResult.OK)
             {           
-                comboBox1.Text = ""; textBox3.Text = ""; textBox2.Text = ""; textBox7.Text = ""; textBox6.Text = ""; textBox4.Text = ""; textBox5.Text = ""; textBox1.Text = "";
+                comboBox1.Text = ""; textBox3.Text = ""; textBox2.Text = ""; textBox7.Text = ""; dateTimePicker1.Text = ""; textBox4.Text = ""; textBox5.Text = ""; textBox1.Text = "";
             }          
         }
 
@@ -66,6 +66,12 @@ namespace WindowsFormsApp1
             comboBox1.Items.Add("BS Computer Science");
             comboBox1.Items.Add("BS Business Administration");
             comboBox1.Items.Add("BS Hospitality Management");
+        }
+
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
