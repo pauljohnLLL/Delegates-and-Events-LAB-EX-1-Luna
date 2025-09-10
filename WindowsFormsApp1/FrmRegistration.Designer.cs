@@ -234,10 +234,14 @@
             // cbGender
             // 
             this.cbGender.FormattingEnabled = true;
+            this.cbGender.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
             this.cbGender.Location = new System.Drawing.Point(534, 322);
             this.cbGender.Name = "cbGender";
             this.cbGender.Size = new System.Drawing.Size(183, 24);
             this.cbGender.TabIndex = 20;
+            
             // 
             // Form1
             // 

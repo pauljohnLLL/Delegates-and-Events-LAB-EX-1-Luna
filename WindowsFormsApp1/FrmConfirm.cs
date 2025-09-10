@@ -67,7 +67,23 @@ namespace WindowsFormsApp1
 
         }
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmConfirm_Load(object sender, EventArgs e)
+        {
+            lblStudentNo.Text = StudentInformationClass.SetStudentNo.ToString();
+            lblName.Text = StudentInformationClass.SetFullName;
+            lblProgram.Text = StudentInformationClass.SetProgram;
+            lblBirthday.Text = StudentInformationClass.SetBirthday;
+            lblGender.Text = StudentInformationClass.SetGender;
+            lblContactNo.Text = StudentInformationClass.SetContactNo.ToString();
+            lblAge.Text = StudentInformationClass.SetAge.ToString();
+        }
+
+
 
         //private string GetMiddleName(string middleName) { return StudentInfoClass.MiddleName; }
         //private string GetAddress(string address) { return StudentInfoClass.Address; }

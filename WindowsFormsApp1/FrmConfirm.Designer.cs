@@ -127,6 +127,7 @@
             this.button1.TabIndex = 14;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // lblGender
             // 
@@ -249,6 +250,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmConfirm";
             this.Text = "FrmConfirm";
+            this.Load += new System.EventHandler(this.FrmConfirm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
