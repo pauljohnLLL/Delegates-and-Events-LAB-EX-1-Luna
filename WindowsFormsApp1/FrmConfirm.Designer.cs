@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblStudentNo = new System.Windows.Forms.Label();
+            this.lblProgram = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
+            this.lblContactNo = new System.Windows.Forms.Label();
+            this.lblAge = new System.Windows.Forms.Label();
+            this.lblBirthday = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.label16 = new System.Windows.Forms.Label();
+            this.lblGender = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -45,77 +45,76 @@
             this.label15 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // lblStudentNo
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.SystemColors.Info;
-            this.label1.Location = new System.Drawing.Point(237, 40);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(19, 22);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "\"";
+            this.lblStudentNo.AutoSize = true;
+            this.lblStudentNo.ForeColor = System.Drawing.SystemColors.Info;
+            this.lblStudentNo.Location = new System.Drawing.Point(237, 40);
+            this.lblStudentNo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblStudentNo.Name = "lblStudentNo";
+            this.lblStudentNo.Size = new System.Drawing.Size(19, 22);
+            this.lblStudentNo.TabIndex = 0;
+            this.lblStudentNo.Text = "\"";
             // 
-            // label2
+            // lblProgram
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.SystemColors.Info;
-            this.label2.Location = new System.Drawing.Point(237, 150);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(19, 22);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "\"";
+            this.lblProgram.AutoSize = true;
+            this.lblProgram.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.lblProgram.ForeColor = System.Drawing.SystemColors.Info;
+            this.lblProgram.Location = new System.Drawing.Point(237, 150);
+            this.lblProgram.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblProgram.Name = "lblProgram";
+            this.lblProgram.Size = new System.Drawing.Size(19, 22);
+            this.lblProgram.TabIndex = 1;
+            this.lblProgram.Text = "\"";
             // 
-            // label4
+            // lblName
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.label4.ForeColor = System.Drawing.SystemColors.Info;
-            this.label4.Location = new System.Drawing.Point(237, 95);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(19, 22);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "\"";
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.lblName.ForeColor = System.Drawing.SystemColors.Info;
+            this.lblName.Location = new System.Drawing.Point(237, 95);
+            this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(19, 22);
+            this.lblName.TabIndex = 2;
+            this.lblName.Text = "\"";
             // 
-            // label5
+            // lblContactNo
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.label5.ForeColor = System.Drawing.SystemColors.Info;
-            this.label5.Location = new System.Drawing.Point(237, 370);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(19, 22);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "\"";
-            
+            this.lblContactNo.AutoSize = true;
+            this.lblContactNo.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.lblContactNo.ForeColor = System.Drawing.SystemColors.Info;
+            this.lblContactNo.Location = new System.Drawing.Point(237, 370);
+            this.lblContactNo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblContactNo.Name = "lblContactNo";
+            this.lblContactNo.Size = new System.Drawing.Size(19, 22);
+            this.lblContactNo.TabIndex = 5;
+            this.lblContactNo.Text = "\"";
             // 
-            // label6
+            // lblAge
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.label6.ForeColor = System.Drawing.SystemColors.Info;
-            this.label6.Location = new System.Drawing.Point(237, 205);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(19, 22);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "\"";
+            this.lblAge.AutoSize = true;
+            this.lblAge.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.lblAge.ForeColor = System.Drawing.SystemColors.Info;
+            this.lblAge.Location = new System.Drawing.Point(237, 205);
+            this.lblAge.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAge.Name = "lblAge";
+            this.lblAge.Size = new System.Drawing.Size(19, 22);
+            this.lblAge.TabIndex = 4;
+            this.lblAge.Text = "\"";
             // 
-            // label7
+            // lblBirthday
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.label7.ForeColor = System.Drawing.SystemColors.Info;
-            this.label7.Location = new System.Drawing.Point(237, 261);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(19, 22);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "\"";
+            this.lblBirthday.AutoSize = true;
+            this.lblBirthday.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.lblBirthday.ForeColor = System.Drawing.SystemColors.Info;
+            this.lblBirthday.Location = new System.Drawing.Point(237, 261);
+            this.lblBirthday.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBirthday.Name = "lblBirthday";
+            this.lblBirthday.Size = new System.Drawing.Size(19, 22);
+            this.lblBirthday.TabIndex = 6;
+            this.lblBirthday.Text = "\"";
             // 
             // button1
             // 
@@ -128,19 +127,18 @@
             this.button1.TabIndex = 14;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = true;
-           
             // 
-            // label16
+            // lblGender
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.label16.ForeColor = System.Drawing.SystemColors.Info;
-            this.label16.Location = new System.Drawing.Point(237, 315);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(19, 22);
-            this.label16.TabIndex = 21;
-            this.label16.Text = "\"";
+            this.lblGender.AutoSize = true;
+            this.lblGender.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.lblGender.ForeColor = System.Drawing.SystemColors.Info;
+            this.lblGender.Location = new System.Drawing.Point(237, 315);
+            this.lblGender.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblGender.Name = "lblGender";
+            this.lblGender.Size = new System.Drawing.Size(19, 22);
+            this.lblGender.TabIndex = 21;
+            this.lblGender.Text = "\"";
             // 
             // label8
             // 
@@ -238,20 +236,19 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.label16);
+            this.Controls.Add(this.lblGender);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblBirthday);
+            this.Controls.Add(this.lblContactNo);
+            this.Controls.Add(this.lblAge);
+            this.Controls.Add(this.lblName);
+            this.Controls.Add(this.lblProgram);
+            this.Controls.Add(this.lblStudentNo);
             this.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.ForeColor = System.Drawing.SystemColors.Info;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmConfirm";
             this.Text = "FrmConfirm";
-           
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -259,14 +256,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblStudentNo;
+        private System.Windows.Forms.Label lblProgram;
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Label lblContactNo;
+        private System.Windows.Forms.Label lblAge;
+        private System.Windows.Forms.Label lblBirthday;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label lblGender;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;

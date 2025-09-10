@@ -30,6 +30,14 @@ namespace WindowsFormsApp1
         }
         private void Form2_Load(object sender, EventArgs e)
         {
+            lblStudentNo.Text = StudentInformationClass.SetStudentNo.ToString();
+            lblName.Text = StudentInformationClass.SetFullName;
+            lblProgram.Text = StudentInformationClass.SetProgram;
+            lblBirthday.Text = StudentInformationClass.SetBirthday;
+            lblGender.Text = StudentInformationClass.SetGender;
+            lblContactNo.Text = StudentInformationClass.SetContactNo.ToString();
+            lblAge.Text = StudentInformationClass.SetAge.ToString();
+
             //label1.Text = DelStudNo(StudentInfoClass.StudentNo).ToString(); 
             //label2.Text = DelProgram(StudentInfoClass.Program); 
             //label4.Text = DelLastName(StudentInfoClass.LastName);  
@@ -58,6 +66,8 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        
 
         //private string GetMiddleName(string middleName) { return StudentInfoClass.MiddleName; }
         //private string GetAddress(string address) { return StudentInfoClass.Address; }
