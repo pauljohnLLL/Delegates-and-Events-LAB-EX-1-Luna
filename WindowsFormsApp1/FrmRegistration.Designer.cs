@@ -44,9 +44,9 @@
             this.label8 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox8 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -213,16 +213,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(534, 319);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(183, 38);
-            this.textBox8.TabIndex = 18;
-            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -241,6 +231,14 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(254, 22);
             this.dateTimePicker1.TabIndex = 19;
             // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(534, 322);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(183, 24);
+            this.comboBox2.TabIndex = 20;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -248,8 +246,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(138)))), ((int)(((byte)(150)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(765, 585);
+            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox8);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox7);
@@ -295,9 +293,9 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }
 

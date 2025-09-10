@@ -17,47 +17,49 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        public class StudentInfoClass
+        public class StudentInformationClass
         {
-            public static string FirstName { get; set; } = "";
-            public static string LastName { get; set; } = "";
-            public static string MiddleName { get; set; } = "";
-            public static string Address { get; set; } = "";
-            public static string Program { get; set; } = "";
-            public static long Age { get; set; } = 0;
-            public static long ContactNo { get; set; } = 0;
-            public static long StudentNo { get; set; } = 0;
-
-            public delegate long DelegateNumber(long number);
-            public delegate string DelegateText(string txt);
+            public static int SetStudentNo { get; set; } = 0;
+            public static string SetFullName { get; set; } = "";
+            public static string SetProgram { get; set; } = "";
+            public static string SetGender { get; set; } = "";
+            public static string SetBirthday { get; set; } = "";
+            public static long SetContactNo { get; set; } = 0;
+            public static int SetAge { get; set; } = 0;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            StudentInfoClass.Program = comboBox1.Text;
-            StudentInfoClass.FirstName = textBox3.Text;
-            StudentInfoClass.LastName = textBox2.Text;
-            StudentInfoClass.MiddleName = textBox7.Text;
-            StudentInfoClass.Address = dateTimePicker1.Text;
+            try
+            {
+                StudentInformationClass.SetFullName = FullName(txtLastName.Text, txtFirstName.Text, txtMiddleInitial.Text);
+                StudentInformationClass.SetStudentNo = StudentNumber(txtStudentNo.Text);
+                StudentInformationClass.SetProgram = cbPrograms.Text;
+                StudentInformationClass.SetGender = cbGender.Text;
+                StudentInformationClass.SetContactNo = ContactNo(txtContactNo.Text);
+                StudentInformationClass.SetAge = Age(txtAge.Text);
+                StudentInformationClass.SetBirthday = datePickerBirtday.Value.ToString("yyyy-MM-dd");
 
-            if (long.TryParse(textBox4.Text, out long age))
-            {
-                StudentInfoClass.Age = age;
+                
+                FrmConfirm confirmForm = new FrmConfirm();
+                confirmForm.ShowDialog();
             }
-            if (long.TryParse(textBox5.Text, out long contactNo))
+            catch (FormatException ex)
             {
-                StudentInfoClass.ContactNo = contactNo;
+                MessageBox.Show("Format error: " + ex.Message);
             }
-            if (long.TryParse(textBox1.Text, out long studentNo))
+            catch (ArgumentNullException ex)
             {
-                StudentInfoClass.StudentNo = studentNo;
+                MessageBox.Show("Missing/invalid input: " + ex.Message);
             }
-
-            FrmConfirm frmConfirm = new FrmConfirm(); 
-            if (frmConfirm.ShowDialog() == DialogResult.OK)
-            {           
-                comboBox1.Text = ""; textBox3.Text = ""; textBox2.Text = ""; textBox7.Text = ""; dateTimePicker1.Text = ""; textBox4.Text = ""; textBox5.Text = ""; textBox1.Text = "";
-            }          
+            catch (OverflowException ex)
+            {
+                MessageBox.Show("Number too large: " + ex.Message);
+            }
+            catch (IndexOutOfRangeException ex)
+            {
+                MessageBox.Show("Value out of range: " + ex.Message);
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -73,6 +75,8 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        
     }
 }
     
