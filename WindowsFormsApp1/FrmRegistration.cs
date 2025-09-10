@@ -12,8 +12,13 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
+        private string _FullName;
+        private int _Age;
+        private long _ContactNo;
+        private long _StudentNo;
         public Form1()
         {
+
             InitializeComponent();
         }
 
@@ -64,10 +69,10 @@ namespace WindowsFormsApp1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            comboBox1.Items.Add("BS Information Technology");
-            comboBox1.Items.Add("BS Computer Science");
-            comboBox1.Items.Add("BS Business Administration");
-            comboBox1.Items.Add("BS Hospitality Management");
+            cbPrograms.Items.Add("BS Information Technology");
+            cbPrograms.Items.Add("BS Computer Science");
+            cbPrograms.Items.Add("BS Business Administration");
+            cbPrograms.Items.Add("BS Hospitality Management");
         }
 
 

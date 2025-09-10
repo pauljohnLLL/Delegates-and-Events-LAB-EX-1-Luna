@@ -35,18 +35,18 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.cbPrograms = new System.Windows.Forms.ComboBox();
+            this.txtStudentNo = new System.Windows.Forms.TextBox();
+            this.txtLastName = new System.Windows.Forms.TextBox();
+            this.txtFirstName = new System.Windows.Forms.TextBox();
+            this.txtAge = new System.Windows.Forms.TextBox();
+            this.txtContactNo = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtMiddleInitial = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.datePickerBirtday = new System.Windows.Forms.DateTimePicker();
+            this.cbGender = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -126,59 +126,59 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "Contact Number :";
             // 
-            // comboBox1
+            // cbPrograms
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(376, 87);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(270, 24);
-            this.comboBox1.TabIndex = 7;
+            this.cbPrograms.FormattingEnabled = true;
+            this.cbPrograms.Location = new System.Drawing.Point(376, 87);
+            this.cbPrograms.Margin = new System.Windows.Forms.Padding(4);
+            this.cbPrograms.Name = "cbPrograms";
+            this.cbPrograms.Size = new System.Drawing.Size(270, 24);
+            this.cbPrograms.TabIndex = 7;
             // 
-            // textBox1
+            // txtStudentNo
             // 
-            this.textBox1.Location = new System.Drawing.Point(55, 87);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(254, 24);
-            this.textBox1.TabIndex = 8;
+            this.txtStudentNo.Location = new System.Drawing.Point(55, 87);
+            this.txtStudentNo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtStudentNo.Multiline = true;
+            this.txtStudentNo.Name = "txtStudentNo";
+            this.txtStudentNo.Size = new System.Drawing.Size(254, 24);
+            this.txtStudentNo.TabIndex = 8;
             // 
-            // textBox2
+            // txtLastName
             // 
-            this.textBox2.Location = new System.Drawing.Point(56, 210);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(183, 38);
-            this.textBox2.TabIndex = 9;
+            this.txtLastName.Location = new System.Drawing.Point(56, 210);
+            this.txtLastName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtLastName.Multiline = true;
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(183, 38);
+            this.txtLastName.TabIndex = 9;
             // 
-            // textBox3
+            // txtFirstName
             // 
-            this.textBox3.Location = new System.Drawing.Point(278, 210);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(224, 38);
-            this.textBox3.TabIndex = 10;
+            this.txtFirstName.Location = new System.Drawing.Point(278, 210);
+            this.txtFirstName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtFirstName.Multiline = true;
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Size = new System.Drawing.Size(224, 38);
+            this.txtFirstName.TabIndex = 10;
             // 
-            // textBox4
+            // txtAge
             // 
-            this.textBox4.Location = new System.Drawing.Point(56, 322);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(132, 35);
-            this.textBox4.TabIndex = 11;
+            this.txtAge.Location = new System.Drawing.Point(56, 322);
+            this.txtAge.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAge.Multiline = true;
+            this.txtAge.Name = "txtAge";
+            this.txtAge.Size = new System.Drawing.Size(132, 35);
+            this.txtAge.TabIndex = 11;
             // 
-            // textBox5
+            // txtContactNo
             // 
-            this.textBox5.Location = new System.Drawing.Point(216, 322);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(195, 35);
-            this.textBox5.TabIndex = 12;
+            this.txtContactNo.Location = new System.Drawing.Point(216, 322);
+            this.txtContactNo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtContactNo.Multiline = true;
+            this.txtContactNo.Name = "txtContactNo";
+            this.txtContactNo.Size = new System.Drawing.Size(195, 35);
+            this.txtContactNo.TabIndex = 12;
             // 
             // label8
             // 
@@ -191,14 +191,14 @@
             this.label8.TabIndex = 14;
             this.label8.Text = "M.I :";
             // 
-            // textBox7
+            // txtMiddleInitial
             // 
-            this.textBox7.Location = new System.Drawing.Point(534, 210);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(183, 38);
-            this.textBox7.TabIndex = 15;
+            this.txtMiddleInitial.Location = new System.Drawing.Point(534, 210);
+            this.txtMiddleInitial.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMiddleInitial.Multiline = true;
+            this.txtMiddleInitial.Name = "txtMiddleInitial";
+            this.txtMiddleInitial.Size = new System.Drawing.Size(183, 38);
+            this.txtMiddleInitial.TabIndex = 15;
             // 
             // button1
             // 
@@ -224,20 +224,20 @@
             this.label9.TabIndex = 17;
             this.label9.Text = "Gender :";
             // 
-            // dateTimePicker1
+            // datePickerBirtday
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(55, 437);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(254, 22);
-            this.dateTimePicker1.TabIndex = 19;
+            this.datePickerBirtday.Location = new System.Drawing.Point(55, 437);
+            this.datePickerBirtday.Name = "datePickerBirtday";
+            this.datePickerBirtday.Size = new System.Drawing.Size(254, 22);
+            this.datePickerBirtday.TabIndex = 19;
             // 
-            // comboBox2
+            // cbGender
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(534, 322);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(183, 24);
-            this.comboBox2.TabIndex = 20;
+            this.cbGender.FormattingEnabled = true;
+            this.cbGender.Location = new System.Drawing.Point(534, 322);
+            this.cbGender.Name = "cbGender";
+            this.cbGender.Size = new System.Drawing.Size(183, 24);
+            this.cbGender.TabIndex = 20;
             // 
             // Form1
             // 
@@ -246,18 +246,18 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(138)))), ((int)(((byte)(150)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(765, 585);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.cbGender);
+            this.Controls.Add(this.datePickerBirtday);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.txtMiddleInitial);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.txtContactNo);
+            this.Controls.Add(this.txtAge);
+            this.Controls.Add(this.txtFirstName);
+            this.Controls.Add(this.txtLastName);
+            this.Controls.Add(this.txtStudentNo);
+            this.Controls.Add(this.cbPrograms);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -284,18 +284,18 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.ComboBox cbPrograms;
+        private System.Windows.Forms.TextBox txtStudentNo;
+        private System.Windows.Forms.TextBox txtLastName;
+        private System.Windows.Forms.TextBox txtFirstName;
+        private System.Windows.Forms.TextBox txtAge;
+        private System.Windows.Forms.TextBox txtContactNo;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtMiddleInitial;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.DateTimePicker datePickerBirtday;
+        private System.Windows.Forms.ComboBox cbGender;
     }
 }
 
