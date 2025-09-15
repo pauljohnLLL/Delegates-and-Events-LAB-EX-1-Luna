@@ -241,7 +241,6 @@
             this.cbGender.Name = "cbGender";
             this.cbGender.Size = new System.Drawing.Size(183, 24);
             this.cbGender.TabIndex = 20;
-            
             // 
             // Form1
             // 

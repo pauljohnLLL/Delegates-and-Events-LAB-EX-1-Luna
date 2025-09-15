@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace WindowsFormsApp1
 {
@@ -37,7 +39,7 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             try
-            {
+            {               
                 StudentInformationClass.SetFullName = FullName(txtLastName.Text, txtFirstName.Text, txtMiddleInitial.Text);
                 StudentInformationClass.SetStudentNo = StudentNumber(txtStudentNo.Text);
                 StudentInformationClass.SetProgram = cbPrograms.Text;
@@ -45,8 +47,33 @@ namespace WindowsFormsApp1
                 StudentInformationClass.SetContactNo = ContactNo(txtContactNo.Text);
                 StudentInformationClass.SetAge = Age(txtAge.Text);
                 StudentInformationClass.SetBirthday = datePickerBirtday.Value.ToString("yyyy-MM-dd");
-                
 
+                using (SqlConnection con = new SqlConnection(
+            "Data Source=ASUS\\SQLEXPRESS;Initial Catalog=RegistrationDB;Integrated Security=True"))
+                {
+                    con.Open();
+
+                    string query = "INSERT INTO Students (StudentNo, FirstName, LastName, MiddleInitial, Age, Gender, Program, ContactNo, Birthday) " +
+                                   "VALUES (@StudentNo, @FirstName, @LastName, @MiddleInitial, @Age, @Gender, @Program, @ContactNo, @Birthday)";
+
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        cmd.Parameters.AddWithValue("@StudentNo", txtStudentNo.Text);
+                        cmd.Parameters.AddWithValue("@FirstName", txtFirstName.Text);
+                        cmd.Parameters.AddWithValue("@LastName", txtLastName.Text);
+                        cmd.Parameters.AddWithValue("@MiddleInitial", txtMiddleInitial.Text);
+                        cmd.Parameters.AddWithValue("@Age", txtAge.Text);
+                        cmd.Parameters.AddWithValue("@Gender", cbGender.Text);
+                        cmd.Parameters.AddWithValue("@Program", cbPrograms.Text);
+                        cmd.Parameters.AddWithValue("@ContactNo", txtContactNo.Text);
+                        cmd.Parameters.AddWithValue("@Birthday", datePickerBirtday.Value);
+
+                        cmd.ExecuteNonQuery();
+                    }
+
+                    con.Close();
+                }
+                MessageBox.Show("Record saved to database successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);               
                 FrmConfirm confirmForm = new FrmConfirm();
                 confirmForm.ShowDialog();
             }
@@ -66,7 +93,11 @@ namespace WindowsFormsApp1
             {
                 MessageBox.Show("Value out of range: " + ex.Message);
             }
-        }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Database error: " + ex.Message);
+            }
+        }            
         public long StudentNumber(string studNum)
         {
             if (Regex.IsMatch(studNum, @"^[0-9]{11}$"))
@@ -148,21 +179,43 @@ namespace WindowsFormsApp1
                 throw new ArgumentNullException("Age field cannot be empty.");
             }
         }
+
         private void Form1_Load(object sender, EventArgs e)
         {
-            cbPrograms.Items.Add("BS Information Technology");
-            cbPrograms.Items.Add("BS Computer Science");
-            cbPrograms.Items.Add("BS Business Administration");
-            cbPrograms.Items.Add("BS Hospitality Management");
 
+            cbPrograms.Items.Clear();
             cbGender.Items.Clear();
-            cbGender.Items.Add("Male");
-            cbGender.Items.Add("Female");
-        }
+            string[] ListOfProgram = new string[]
+            {
+        "BS Information Technology",
+        "BS Computer Science",
+        "BS Information Systems",
+        "BS in Accountancy",
+        "BS in Hospitality Management",
+        "BS in Tourism Management"
+            };
 
+            for (int i = 0; i < ListOfProgram.Length; i++)
+            {
+                cbPrograms.Items.Add(ListOfProgram[i]);
+            }
+            string[] ListOfGender = new string[]
+            {
+        "Male",
+        "Female"
+            };
+
+            for (int i = 0; i < ListOfGender.Length; i++)
+            {
+                cbGender.Items.Add(ListOfGender[i]);
+            }
+        }
     }
 }
-    
+        
+
+
+
 
 
 
