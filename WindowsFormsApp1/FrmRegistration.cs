@@ -95,9 +95,23 @@ namespace WindowsFormsApp1
             }
             catch (SqlException ex)
             {
-                MessageBox.Show("Database error: " + ex.Message);
+                if (ex.Number == 2627)
+                {
+                    MessageBox.Show("The Student Number you entered already exists. Please enter a unique Student Number.",
+                                    "Duplicate Student Number",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    MessageBox.Show("Database error: " + ex.Message,
+                                    "Error",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Error);
+                }
             }
-        }            
+
+        }
         public long StudentNumber(string studNum)
         {
             if (Regex.IsMatch(studNum, @"^[0-9]{11}$"))
